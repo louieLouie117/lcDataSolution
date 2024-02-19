@@ -157,7 +157,7 @@ const premiumServiceHandler = () => {
                 <section className='Cost-Container'>
                     <header>
                     <img src="/img/CostImg.png" alt="" />
-                    <h3>Pricing and Services test</h3>
+                    <h3>Pricing and Services</h3>
                     {/* <p>You can build a price base on your buisness needs or get full services.</p>
                     <nav>
                     <button>Build a price</button>
