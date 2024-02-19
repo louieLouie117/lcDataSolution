@@ -184,11 +184,19 @@ const premiumServiceHandler = () => {
                        
                             </header>
                             <main className='AppPricing-Container'>
+                            <section>
+                                <h3>Database</h3>
+                                <ul className='pricing-container'>
+                                    <li>Strategy and development...........</li>
+                                    <li>$3,000.00</li>
+                                
+                                </ul>
+                                </section>
                                 <section>
                                 <h3>App Design</h3>
                                 <ul className='pricing-container'>
                                     <li>Mobile, Tablet, and Desktop...........</li>
-                                    <li>$2,500.00</li>
+                                    <li>$1,000.00</li>
                                 
                                 </ul>
                                 </section>
@@ -197,7 +205,7 @@ const premiumServiceHandler = () => {
                                 <h3>App Development</h3>
                                 <ul className='pricing-container'>
                                 <li>Mobile, Tablet, and Desktop...........</li>
-                                    <li>$2,500.00</li>
+                                    <li>$1,000.00</li>
                                 </ul>
                                 </section>
 
