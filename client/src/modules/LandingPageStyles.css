@@ -1455,13 +1455,16 @@ html{
 
   .footer-container{
     display: grid;
-    background-color: #136DC0;
+    /* background-color: #136DC0; */
+    background: linear-gradient(180deg, #00aecd, #136DC0);
     justify-content: center;
     padding: 20px;
+    height: 50px;
+    align-items: center;
   }
 
   .footer-container>a{
-    font: 1em sans-serif;
+    font: 1.3em sans-serif;
     color: white;
     text-decoration: none;
   }
