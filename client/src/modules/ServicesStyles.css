@@ -1,0 +1,224 @@
+.Services-Container{
+    background-color: rgb(19, 109, 192);
+    padding-top: 40px;
+    padding-bottom: 180px;
+}
+
+.Services-Container>header>h1{
+    font: 2em sans-serif;
+}
+.ServicesCard {
+    display: grid;
+    justify-content: center;
+    row-gap: 20px;
+    align-items: center;
+
+
+}
+
+
+
+.ServicesCard>li{
+    display: grid;
+    row-gap: 10px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    align-content: flex-start;
+    max-width: 35em;
+
+
+}
+
+
+.ServicesCard>li>main{
+    display: grid;
+    padding-bottom: 20px;
+    height: 400px;
+    align-content: flex-start;
+}
+
+.ServicesCard>li>main>h3{
+    font: 1em sans-serif;
+    color: #0080BF;
+}
+
+.ServicesCard>li>header{
+    font: 1em sans-serif;
+}
+
+.ServicesCard>li>header>h2{
+    color: #0080BF;
+}
+
+.ServicesCard>li>h2{
+    font: 1.7em sans-serif;
+    color: #0080BF;
+    width: 350px;
+    text-align: center;
+    padding: 5px;
+    /* cursor: pointer; */
+
+}
+
+
+.ServiceCardInfo{
+    display: grid;
+    justify-items: center;
+    row-gap: 30px;
+}
+.ServiceCardInfo> p{
+    font: 1.3em sans-serif;
+    color: black;
+
+}
+
+.ServiceCardInfo> img{
+    width: 360px;
+    height: auto;
+}
+
+.PeaceOfMind{
+    display: grid;
+    /* background: linear-gradient(rgb(19, 109, 192), rgb(0, 174, 205) 120%); */
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 80vh;
+    justify-items: center;
+}
+
+.PeaceOfMind>h2{
+    font: 2em sans-serif;
+    color: white;
+    align-self: center;
+}
+
+.PeaceOfMind>main{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: white;
+    height: 300px;
+    row-gap: 50px;
+}
+
+
+.Cost-Container{
+    display: grid;
+    background-color: white;
+    max-width: 35em;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 10px;
+    
+}
+
+
+.Cost-Container>header{
+    display: grid;
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin-top: -90px;
+    justify-self: center;
+    
+}
+
+
+
+.pricing-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    justify-content: flex-start;
+    
+
+}
+
+.pricing-container>li{
+    display: grid;
+    justify-items: flex-start;
+    align-items: flex-end;
+}
+
+.ServicesCard>li>h3{
+    font: 1em sans-serif;
+    color: #0080BF;
+}
+
+
+.BulletPoint{
+    list-style-type: circle;
+    margin-left: 20px;
+
+}
+
+.AppPricing-Container{
+    display: grid;
+    row-gap: 10px;
+    font: 1em sans-serif;
+    
+    
+}
+
+.AppPricing-Container>section>h3{
+   font: 1.3em sans-serif;
+   color: black;
+}
+
+
+.AppPricing-Container>section:last-of-type{
+    padding-top: 40px;
+ }
+.MonthlyServicesInfo{
+    margin-top: 10px;
+}
+
+.MonthlyOptions{
+    display: flex;
+    width: 100%;
+}
+
+
+.MonthlyOptions>button{
+    font: 1em sans-serif;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    color: rgb(19, 109, 192);
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+    border-bottom: solid 1px rgb(19, 109, 192);
+}
+
+
+
+
+
+@media screen and (min-width: 1100px) {
+    .BrakePoint{
+        display: none;
+    }
+
+    .ServiceCardInfo{
+        display: grid;
+    }
+    .PeaceOfMind{
+        justify-content: center;
+      
+    }
+
+
+ 
+
+ 
+
+
+}
