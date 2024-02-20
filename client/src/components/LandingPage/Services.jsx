@@ -39,7 +39,7 @@ const basicServiceHandler = () => {
     setBasicServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
     setPlusServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
-    setPurchaseLink('https://buy.stripe.com/3cscNcg6z1sB0zm4gj');
+    setPurchaseLink('https://buy.stripe.com/fZe6oO3jNdbj0zm149');
     // set monthly service price
     setMonthlyServicePrice('120.00');
     // set purchase button text
@@ -47,7 +47,7 @@ const basicServiceHandler = () => {
     // payment integration
     setPaymentIntegration({display: 'none'});
     // total amount
-    setTotalAmount('$5,1200.00');
+    setTotalAmount('$5,120.00');
     // analytics integration
     setAnalyticsIntegration({display: 'none'});
 }
@@ -60,7 +60,7 @@ const plusServiceHandler = () => {
     setPlusServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
     setBasicServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});  
-    setPurchaseLink('https://buy.stripe.com/00gaF49Ibdbj0zmeUW');
+    setPurchaseLink('https://buy.stripe.com/4gw00qaMfgnvbe028e');
     // set monthly service price
     setMonthlyServicePrice('240.00');
     // set purchase button text
@@ -84,7 +84,7 @@ const premiumServiceHandler = () => {
     setBasicServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPlusServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     
-    setPurchaseLink('https://buy.stripe.com/5kAcNc7A3fjr2Hu7sw');
+    setPurchaseLink('https://buy.stripe.com/aEUbJ85rVfjrbe0fZ5');
     // set monthly service price
     setMonthlyServicePrice('560.00');
     // set purchase button text
