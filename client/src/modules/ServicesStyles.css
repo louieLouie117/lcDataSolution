@@ -1,5 +1,6 @@
 .Services-Container{
     background-color: rgb(19, 109, 192);
+    background-color: white;
     padding-top: 40px;
     padding-bottom: 180px;
 }
@@ -52,7 +53,7 @@
 }
 
 .ServicesCard>li>h2{
-    font: 1.7em sans-serif;
+    font: 1.2em sans-serif;
     color: #0080BF;
     width: 350px;
     text-align: center;
@@ -80,11 +81,11 @@
 
 .PeaceOfMind{
     display: grid;
-    /* background: linear-gradient(rgb(19, 109, 192), rgb(0, 174, 205) 120%); */
     padding-top: 40px;
     padding-bottom: 40px;
     height: 80vh;
     justify-items: center;
+    background: linear-gradient(140deg, #2727aa, #f39e4e);
 }
 
 .PeaceOfMind>h2{
@@ -145,6 +146,10 @@
     display: grid;
     justify-items: flex-start;
     align-items: flex-end;
+}
+
+.pricing-container>li:last-of-type{
+justify-items: flex-end;
 }
 
 .ServicesCard>li>h3{

@@ -19,9 +19,10 @@ function LandingPage(props) {
 
       {/* <Goals></Goals> */}
       <div>
+      <WorkExperience></WorkExperience>
+
       <Services></Services>
 
-      <WorkExperience></WorkExperience>
       <ToolsTechnologies></ToolsTechnologies>
     
 

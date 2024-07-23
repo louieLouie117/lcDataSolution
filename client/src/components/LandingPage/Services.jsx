@@ -5,56 +5,61 @@ function Services(props) {
 
     <ServicesStyles></ServicesStyles>
     // service tile
-    const [ServiceTile, setServiceTile] = useState('MVP Plus');
+    const [ServiceTile, setServiceTile] = useState('Website Basic');
     // service description
-    const [ServiceDescription, setServiceDescription] = useState('MVP Plus Service: Enhance your app with additional features and scalability. Rigorous testing ensures quality over time.');
+    const [ServiceDescription, setServiceDescription] = useState('Website Plus Service: Enhance your app with additional features and scalability. Rigorous testing ensures quality over time.');
     // service purchase link
     const [purchaseLink, setPurchaseLink] = useState('https://buy.stripe.com/00gaF49Ibdbj0zmeUW');
     // monthly service price
-    const [monthlyServicePrice, setMonthlyServicePrice] = useState('240.00');
+    const [monthlyServicePrice, setMonthlyServicePrice] = useState('60.00');
     // purchase button text
     const [purchaseBTNText, setPurchaseBTNText] = useState('Get Plus');
     // payment integration
-    const [paymentIntegration, setPaymentIntegration] = useState({display: 'grid'});
+    const [paymentIntegration, setPaymentIntegration] = useState({display: 'none'});
+
+    // database integration
+    const [dataBaseIntegration, setDataBaseIntegration] = useState({display: 'none'});
     // total amount
-    const [TotalAmount, setTotalAmount] = useState('$6,740.00');
+    const [TotalAmount, setTotalAmount] = useState('$500.00');
     // analytics integration
     const [analyticsIntegration, setAnalyticsIntegration] = useState({display: 'none'});
     // highlight analytics
-    const [HighlightAnalytics, setHighlightAnalytics] = useState({color: '#136db0'});
+    const [HighlightAnalytics, setHighlightAnalytics] = useState({color: '#0092db'});
 
     // updated button to link to stripe
-    const [basicServiceBTNStyles, setBasicServiceBTNStyles] = useState({backgroundColor: 'white', color: '#136db0'});
-    const [plusServiceBTNStyles, setPlusServiceBTNStyles] = useState({backgroundColor: '#136db0', color: 'white'});
-    const [premiumServiceBTNStyles, setPremiumServiceBTNStyles] = useState({backgroundColor: 'white', color: '#136db0'});
+    const [basicServiceBTNStyles, setBasicServiceBTNStyles] = useState({backgroundColor: '#136db0', color: 'white'});
+    const [plusServiceBTNStyles, setPlusServiceBTNStyles] = useState({backgroundColor: 'white', color: '#0092db'});
+    const [premiumServiceBTNStyles, setPremiumServiceBTNStyles] = useState({backgroundColor: 'white', color: '#0092db'});
     // highlight payment
-    const [HighlightPayment, setHighlightPayment] = useState({color: '#136db0'});
+    const [HighlightPayment, setHighlightPayment] = useState({color: '#0092db'});
 
 // basicServiceHandler
 const basicServiceHandler = () => {
     //service tile
-    setServiceTile('MVP Basic');
+    setServiceTile('Basic Website');
     // service description
-    setServiceDescription('MVP Basic Service: Get a streamlined app that meets your immediate needs. Expect regular updates and cost-effectiveness.');
+    setServiceDescription('Website Basic Service: Get a streamlined website that meets your immediate needs. Expect regular updates and cost-effectiveness.');
     setBasicServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
     setPlusServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPurchaseLink('https://buy.stripe.com/fZe6oO3jNdbj0zm149');
     // set monthly service price
-    setMonthlyServicePrice('120.00');
+    setMonthlyServicePrice('60.00');
     // set purchase button text
     setPurchaseBTNText('Get Basic');
     // payment integration
     setPaymentIntegration({display: 'none'});
     // total amount
-    setTotalAmount('$5,120.00');
+    setTotalAmount('$500.00');
     // analytics integration
     setAnalyticsIntegration({display: 'none'});
+    // database integration
+    setDataBaseIntegration({display: 'none'});
 }
 // plusServiceHandler
 const plusServiceHandler = () => {
     //service tile
-    setServiceTile('MVP Plus');
+    setServiceTile('Website Plus');
     // service description
     setServiceDescription('MVP Plus Service: Enhance your app with additional features and scalability. Rigorous testing ensures quality over time.');
     setPlusServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
@@ -62,22 +67,27 @@ const plusServiceHandler = () => {
     setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});  
     setPurchaseLink('https://buy.stripe.com/4gw00qaMfgnvbe028e');
     // set monthly service price
-    setMonthlyServicePrice('240.00');
+    setMonthlyServicePrice('260.00');
     // set purchase button text
     setPurchaseBTNText('Get Plus');
     // payment integration
-    setPaymentIntegration({display: 'grid'});
     // total amount
-    setTotalAmount('$6,740.00');
+    setTotalAmount('$1,760.00');
     // analytics integration
-    setAnalyticsIntegration({display: 'none'});
+    setAnalyticsIntegration({display: 'grid'});
+    setHighlightAnalytics({color: '#0092db'});
     // highlight payment
     setHighlightPayment({color: '#0092db'});
+    // accept online payments
+    setPaymentIntegration({display: 'none'});
+
+    // database integration
+    setDataBaseIntegration({display: 'none'});
 }
 // premiumServiceHandler
 const premiumServiceHandler = () => {
     //service tile
-    setServiceTile('MVP Premium');
+    setServiceTile('Website Premium');
     // service description
     setServiceDescription('MVP Premium Service: Transform your app into a robust application. High availability and reliability are our focus.');
     setPremiumServiceBTNStyles( {backgroundColor: '#136db0', color: 'white'});
@@ -86,19 +96,25 @@ const premiumServiceHandler = () => {
     
     setPurchaseLink('https://buy.stripe.com/aEUbJ85rVfjrbe0fZ5');
     // set monthly service price
-    setMonthlyServicePrice('560.00');
+    setMonthlyServicePrice('280.00');
     // set purchase button text
     setPurchaseBTNText('Get Premium');
     // payment integration
     setPaymentIntegration({display: 'grid'});
     // total amount
-    setTotalAmount('$8,560.00');
+    setTotalAmount('$8,280.00');
     // analytics integration
     setAnalyticsIntegration({display: 'grid'});
     // highlight payment
-    setHighlightPayment({color: 'black'});
+    setHighlightPayment({color: '#0092db'});
     // highlight analytics
-    setHighlightAnalytics({color: '#0092db'});
+    setHighlightAnalytics({color: 'black'});
+    // database integration
+    setDataBaseIntegration({display: 'grid'});
+    // payment integration
+    setPaymentIntegration({display: 'grid'});
+
+
 
 }
 
@@ -118,21 +134,26 @@ const premiumServiceHandler = () => {
                     <ul className='ServicesCard'>
 
                         <li>
-                            <h2>MVP Application</h2>
+                            <h2>Why Every Business Needs a Website.</h2>
                             <div className='ServiceCardInfo'>
-                            <img src="/img/mvpComic.png" alt="" />
-                            <p>Unlock efficiency and drive success with a Minimum Viable Product (MVP).</p>
+                            <img src="/img/HeroImage.png" alt="" />
                             <p>
-                            Streamlining processes involves pinpointing and eliminating redundant and unnecessary steps, transforming your workflow into a lean, effective powerhouse.
+                            In today’s digital landscape, having a website is no longer a luxury—it’s a necessity. From enterprise to small local business having a website is essential. Here are compelling reasons why your business should have a website:
                             </p>
-                            <p>
-                            By embracing streamlined processes, businesses can go paperless, reclaim valuable time, and optimize their financial resources.</p>
+                            <ul>
+        <li><strong>Credibility and Trust:</strong> A professional website builds trust with potential customers.</li>
+        <li><strong>Brand Showcase:</strong> Define your brand identity and stand out from competitors.</li>
+        <li><strong>Lead Generation:</strong> Your website converts visitors into leads.</li>
+        <li><strong>SEO Benefits:</strong> Optimize for search engines to increase visibility.</li>
+        <li><strong>Efficient Customer Service:</strong> Provide essential information online.</li>
+    </ul>
                             </div>
                             <footer>
-                            <a href="https://calendly.com/cardona-luis/15min">
+                            <a href="https://calendly.com/d/cpbm-dt4-gh7/15min">
                             <button className='MainBTN'>Schedule Consultation</button>
                             </a>
                             </footer>
+
 
                         </li>
                     </ul>
@@ -185,49 +206,43 @@ const premiumServiceHandler = () => {
                             </header>
                             <main className='AppPricing-Container'>
                             <section>
-                                <h3>Database</h3>
                                 <ul className='pricing-container'>
-                                    <li>Strategy and development...........</li>
-                                    <li>$3,000.00</li>
-                                
+                                    <li>Website design...........</li>
+                                    <li>$250.00</li>
                                 </ul>
                                 </section>
                                 <section>
-                                <h3>App Design</h3>
                                 <ul className='pricing-container'>
-                                    <li>Mobile, Tablet, and Desktop...........</li>
-                                    <li>$1,000.00</li>
+                                    <li>Website development...........</li>
+                                    <li>$250.00</li>
                                 
                                 </ul>
                                 </section>
 
-                                <section>
-                                <h3>App Development</h3>
+                                <section style={analyticsIntegration}>
                                 <ul className='pricing-container'>
-                                <li>Mobile, Tablet, and Desktop...........</li>
-                                    <li>$1,000.00</li>
+                                <li style={HighlightAnalytics}>Start marketing online............</li>
+                                    <li style={HighlightAnalytics}>$1,000.00</li>
                                 </ul>
                                 </section>
 
                                 <section style={paymentIntegration}>
-                                <h3 style={HighlightPayment}>Payment Integration</h3>
                                 <ul className='pricing-container'>
-                                <li style={HighlightPayment}>Accept payment or subscription...........</li>
+                                <li style={HighlightPayment}>Accept online payments...........</li>
                                     <li style={HighlightPayment}>$1,500.00</li>
                                 </ul>
                                 </section>
 
-                                   
-                                <section style={analyticsIntegration}>
-                                <h3 style={HighlightAnalytics}>Analytics Integration</h3>
+
+                                <section style={dataBaseIntegration}>
                                 <ul className='pricing-container'>
-                                <li style={HighlightAnalytics}>Improve user experience with analytics............</li>
-                                    <li style={HighlightAnalytics}>$1,500.00</li>
+                                <li style={HighlightPayment}>Database integration...........</li>
+                                    <li style={HighlightPayment}>$5,000.00</li>
                                 </ul>
                                 </section>
 
-                                
 
+                              
 
                                 <section>
                                 <h3>Monthly Services</h3>
