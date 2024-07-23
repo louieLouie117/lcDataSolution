@@ -5,37 +5,40 @@ function Services(props) {
 
     <ServicesStyles></ServicesStyles>
     // service tile
-    const [ServiceTile, setServiceTile] = useState('MVP Plus');
+    const [ServiceTile, setServiceTile] = useState('Website Basic');
     // service description
-    const [ServiceDescription, setServiceDescription] = useState('MVP Plus Service: Enhance your app with additional features and scalability. Rigorous testing ensures quality over time.');
+    const [ServiceDescription, setServiceDescription] = useState('Website Plus Service: Enhance your app with additional features and scalability. Rigorous testing ensures quality over time.');
     // service purchase link
     const [purchaseLink, setPurchaseLink] = useState('https://buy.stripe.com/00gaF49Ibdbj0zmeUW');
     // monthly service price
-    const [monthlyServicePrice, setMonthlyServicePrice] = useState('240.00');
+    const [monthlyServicePrice, setMonthlyServicePrice] = useState('120.00');
     // purchase button text
     const [purchaseBTNText, setPurchaseBTNText] = useState('Get Plus');
     // payment integration
-    const [paymentIntegration, setPaymentIntegration] = useState({display: 'grid'});
+    const [paymentIntegration, setPaymentIntegration] = useState({display: 'none'});
+
+    // database integration
+    const [dataBaseIntegration, setDataBaseIntegration] = useState({display: 'none'});
     // total amount
-    const [TotalAmount, setTotalAmount] = useState('$6,740.00');
+    const [TotalAmount, setTotalAmount] = useState('$5,120.00');
     // analytics integration
     const [analyticsIntegration, setAnalyticsIntegration] = useState({display: 'none'});
     // highlight analytics
-    const [HighlightAnalytics, setHighlightAnalytics] = useState({color: '#136db0'});
+    const [HighlightAnalytics, setHighlightAnalytics] = useState({color: '#0092db'});
 
     // updated button to link to stripe
-    const [basicServiceBTNStyles, setBasicServiceBTNStyles] = useState({backgroundColor: 'white', color: '#136db0'});
-    const [plusServiceBTNStyles, setPlusServiceBTNStyles] = useState({backgroundColor: '#136db0', color: 'white'});
-    const [premiumServiceBTNStyles, setPremiumServiceBTNStyles] = useState({backgroundColor: 'white', color: '#136db0'});
+    const [basicServiceBTNStyles, setBasicServiceBTNStyles] = useState({backgroundColor: '#136db0', color: 'white'});
+    const [plusServiceBTNStyles, setPlusServiceBTNStyles] = useState({backgroundColor: 'white', color: '#0092db'});
+    const [premiumServiceBTNStyles, setPremiumServiceBTNStyles] = useState({backgroundColor: 'white', color: '#0092db'});
     // highlight payment
-    const [HighlightPayment, setHighlightPayment] = useState({color: '#136db0'});
+    const [HighlightPayment, setHighlightPayment] = useState({color: '#0092db'});
 
 // basicServiceHandler
 const basicServiceHandler = () => {
     //service tile
-    setServiceTile('MVP Basic');
+    setServiceTile('Basic Website');
     // service description
-    setServiceDescription('MVP Basic Service: Get a streamlined app that meets your immediate needs. Expect regular updates and cost-effectiveness.');
+    setServiceDescription('Website Basic Service: Get a streamlined website that meets your immediate needs. Expect regular updates and cost-effectiveness.');
     setBasicServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
     setPlusServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
@@ -50,11 +53,13 @@ const basicServiceHandler = () => {
     setTotalAmount('$5,120.00');
     // analytics integration
     setAnalyticsIntegration({display: 'none'});
+    // database integration
+    setDataBaseIntegration({display: 'none'});
 }
 // plusServiceHandler
 const plusServiceHandler = () => {
     //service tile
-    setServiceTile('MVP Plus');
+    setServiceTile('Website Plus');
     // service description
     setServiceDescription('MVP Plus Service: Enhance your app with additional features and scalability. Rigorous testing ensures quality over time.');
     setPlusServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
@@ -66,18 +71,25 @@ const plusServiceHandler = () => {
     // set purchase button text
     setPurchaseBTNText('Get Plus');
     // payment integration
-    setPaymentIntegration({display: 'grid'});
     // total amount
     setTotalAmount('$6,740.00');
     // analytics integration
-    setAnalyticsIntegration({display: 'none'});
+    setHighlightAnalytics({color: '#0092db'});
     // highlight payment
     setHighlightPayment({color: '#0092db'});
+    // accept online payments
+    setPaymentIntegration({display: 'none'});
+    setPaymentIntegration({display: 'grid'});
+    setAnalyticsIntegration({display: 'none'});
+
+
+    // database integration
+    setDataBaseIntegration({display: 'none'});
 }
 // premiumServiceHandler
 const premiumServiceHandler = () => {
     //service tile
-    setServiceTile('MVP Premium');
+    setServiceTile('Website Premium');
     // service description
     setServiceDescription('MVP Premium Service: Transform your app into a robust application. High availability and reliability are our focus.');
     setPremiumServiceBTNStyles( {backgroundColor: '#136db0', color: 'white'});
@@ -99,6 +111,12 @@ const premiumServiceHandler = () => {
     setHighlightPayment({color: 'black'});
     // highlight analytics
     setHighlightAnalytics({color: '#0092db'});
+    // database integration
+    setDataBaseIntegration({display: 'none'});
+    // payment integration
+
+    setAnalyticsIntegration({display: 'grid'});
+
 
 }
 
@@ -118,35 +136,69 @@ const premiumServiceHandler = () => {
                     <ul className='ServicesCard'>
 
                         <li>
-                            <h2>MVP Application</h2>
+                            <h2>The Importance of Databases in App Development.</h2>
                             <div className='ServiceCardInfo'>
-                            <img src="/img/mvpComic.png" alt="" />
-                            <p>Unlock efficiency and drive success with a Minimum Viable Product (MVP).</p>
+                            <img src="/img/HeroSoftwareImg.png" alt="" />
                             <p>
-                            Streamlining processes involves pinpointing and eliminating redundant and unnecessary steps, transforming your workflow into a lean, effective powerhouse.
+                            In the dynamic world of app development, databases play a pivotal role in creating efficient and robust applications. Let’s explore why databases are crucial and how they relate to app development:
                             </p>
-                            <p>
-                            By embracing streamlined processes, businesses can go paperless, reclaim valuable time, and optimize their financial resources.</p>
+                            <ul>
+        <li><strong>Effective Data Management:</strong> A database is a structured collection of data that enables efficient retrieval, manipulation, and management.
+        It organizes large amounts of data, ensuring smooth app performance.</li>
+        <li><strong>Enhanced Performance:</strong> Fast data access and manipulation lead to responsive apps.
+        Choosing the right database optimizes performance, making your app stand out.</li>
+        <li><strong>Scalability:</strong> As your user base grows, databases accommodate increased data volume.
+        Scalability ensures your app can handle more users without compromising speed.</li>
+        <li><strong>Security Measures:</strong> Robust security protects sensitive user data.
+        Properly designed databases prevent unauthorized access.</li>
+       
+    </ul>
                             </div>
                             <footer>
-                            <a href="https://calendly.com/cardona-luis/15min">
+                            <a href="https://calendly.com/cardona-luis/30min">
                             <button className='MainBTN'>Schedule Consultation</button>
                             </a>
                             </footer>
 
+
                         </li>
                     </ul>
                 </section>
-
                 <section>
                     <div className="PeaceOfMind">
-                        <h2>Peace of mind</h2>
                         <main>
                         <img src="/img/PeaceOfMindImg.png" alt="" />
 
                             <div className="PeaceOfMindInfo">
-                            <h3>Have a expert at your fingertips.</h3>
-                            
+                            <h3>Have an expert at your fingertips. If you have any question please contact me.</h3>
+                            <div className='Contact-Container'>
+
+
+                      <main>
+                      <a href="tel:931-401-7238">
+                        <img src="/img/Icons/IconPhone.png" alt="" />
+                      <button>Call</button>
+
+                      </a>
+
+                      <a href="sms:931-401-7238">
+                        <img src="/img/Icons/IconText.png" alt="" />
+                      <button>Text</button>
+                      </a>
+
+                      <a href="mailTo:LCwebsitesolutions@outlook.com?subject=Website&body= Hello Luis Cardona">
+                        <img src="/img/Icons/IconEmail.png" alt="" />
+                        <button>Email</button>
+                      </a>
+                      <a href="https://www.instagram.com/garagesally.founder/">
+                        <img src="/img/Icons/IconInsta.png" alt="" />
+                      <button>DM</button>
+                      </a>
+
+                      </main>
+               
+
+                    </div>
 
                             </div>
 
@@ -189,7 +241,6 @@ const premiumServiceHandler = () => {
                                 <ul className='pricing-container'>
                                     <li>Strategy and development...........</li>
                                     <li>$3,000.00</li>
-                                
                                 </ul>
                                 </section>
                                 <section>
@@ -200,34 +251,43 @@ const premiumServiceHandler = () => {
                                 
                                 </ul>
                                 </section>
-
                                 <section>
                                 <h3>App Development</h3>
                                 <ul className='pricing-container'>
-                                <li>Mobile, Tablet, and Desktop...........</li>
+                                    <li>Mobile, Tablet, and Desktop...........</li>
                                     <li>$1,000.00</li>
+                                
                                 </ul>
                                 </section>
 
                                 <section style={paymentIntegration}>
-                                <h3 style={HighlightPayment}>Payment Integration</h3>
+                                    <h3 style={HighlightPayment}>Payment Integration</h3>
                                 <ul className='pricing-container'>
                                 <li style={HighlightPayment}>Accept payment or subscription...........</li>
                                     <li style={HighlightPayment}>$1,500.00</li>
                                 </ul>
                                 </section>
 
-                                   
                                 <section style={analyticsIntegration}>
-                                <h3 style={HighlightAnalytics}>Analytics Integration</h3>
+                                    <h3 style={HighlightAnalytics}>Analytics Integration</h3>
                                 <ul className='pricing-container'>
                                 <li style={HighlightAnalytics}>Improve user experience with analytics............</li>
                                     <li style={HighlightAnalytics}>$1,500.00</li>
                                 </ul>
                                 </section>
 
-                                
+                            
 
+
+                                <section style={dataBaseIntegration}>
+                                <ul className='pricing-container'>
+                                <li style={HighlightPayment}>Database integration...........</li>
+                                    <li style={HighlightPayment}>$5,000.00</li>
+                                </ul>
+                                </section>
+
+
+                              
 
                                 <section>
                                 <h3>Monthly Services</h3>
