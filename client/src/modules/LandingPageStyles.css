@@ -1271,7 +1271,7 @@ html{
     justify-content: center;
     row-gap: 20px;
     width: auto;
-
+    height: 100vh
 
   }
   
@@ -1644,7 +1644,9 @@ html{
         text-decoration: none;
         text-align: center;
       }
-    
+      .devTools-container{
+        height: 50vh;
+      }
       
     
     }

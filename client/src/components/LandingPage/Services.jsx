@@ -11,7 +11,7 @@ function Services(props) {
     // service purchase link
     const [purchaseLink, setPurchaseLink] = useState('https://buy.stripe.com/00gaF49Ibdbj0zmeUW');
     // monthly service price
-    const [monthlyServicePrice, setMonthlyServicePrice] = useState('60.00');
+    const [monthlyServicePrice, setMonthlyServicePrice] = useState('120.00');
     // purchase button text
     const [purchaseBTNText, setPurchaseBTNText] = useState('Get Plus');
     // payment integration
@@ -20,7 +20,7 @@ function Services(props) {
     // database integration
     const [dataBaseIntegration, setDataBaseIntegration] = useState({display: 'none'});
     // total amount
-    const [TotalAmount, setTotalAmount] = useState('$500.00');
+    const [TotalAmount, setTotalAmount] = useState('$5,120.00');
     // analytics integration
     const [analyticsIntegration, setAnalyticsIntegration] = useState({display: 'none'});
     // highlight analytics
@@ -44,13 +44,13 @@ const basicServiceHandler = () => {
     setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPurchaseLink('https://buy.stripe.com/fZe6oO3jNdbj0zm149');
     // set monthly service price
-    setMonthlyServicePrice('60.00');
+    setMonthlyServicePrice('120.00');
     // set purchase button text
     setPurchaseBTNText('Get Basic');
     // payment integration
     setPaymentIntegration({display: 'none'});
     // total amount
-    setTotalAmount('$500.00');
+    setTotalAmount('$5,120.00');
     // analytics integration
     setAnalyticsIntegration({display: 'none'});
     // database integration
@@ -67,19 +67,21 @@ const plusServiceHandler = () => {
     setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});  
     setPurchaseLink('https://buy.stripe.com/4gw00qaMfgnvbe028e');
     // set monthly service price
-    setMonthlyServicePrice('260.00');
+    setMonthlyServicePrice('240.00');
     // set purchase button text
     setPurchaseBTNText('Get Plus');
     // payment integration
     // total amount
-    setTotalAmount('$1,760.00');
+    setTotalAmount('$6,740.00');
     // analytics integration
-    setAnalyticsIntegration({display: 'grid'});
     setHighlightAnalytics({color: '#0092db'});
     // highlight payment
     setHighlightPayment({color: '#0092db'});
     // accept online payments
     setPaymentIntegration({display: 'none'});
+    setPaymentIntegration({display: 'grid'});
+    setAnalyticsIntegration({display: 'none'});
+
 
     // database integration
     setDataBaseIntegration({display: 'none'});
@@ -96,24 +98,24 @@ const premiumServiceHandler = () => {
     
     setPurchaseLink('https://buy.stripe.com/aEUbJ85rVfjrbe0fZ5');
     // set monthly service price
-    setMonthlyServicePrice('280.00');
+    setMonthlyServicePrice('560.00');
     // set purchase button text
     setPurchaseBTNText('Get Premium');
     // payment integration
     setPaymentIntegration({display: 'grid'});
     // total amount
-    setTotalAmount('$8,280.00');
+    setTotalAmount('$8,560.00');
     // analytics integration
     setAnalyticsIntegration({display: 'grid'});
     // highlight payment
-    setHighlightPayment({color: '#0092db'});
+    setHighlightPayment({color: 'black'});
     // highlight analytics
-    setHighlightAnalytics({color: 'black'});
+    setHighlightAnalytics({color: '#0092db'});
     // database integration
-    setDataBaseIntegration({display: 'grid'});
+    setDataBaseIntegration({display: 'none'});
     // payment integration
-    setPaymentIntegration({display: 'grid'});
 
+    setAnalyticsIntegration({display: 'grid'});
 
 
 }
@@ -235,32 +237,46 @@ const premiumServiceHandler = () => {
                             </header>
                             <main className='AppPricing-Container'>
                             <section>
+                                <h3>Database</h3>
                                 <ul className='pricing-container'>
-                                    <li>Website design...........</li>
-                                    <li>$250.00</li>
+                                    <li>Strategy and development...........</li>
+                                    <li>$3,000.00</li>
                                 </ul>
                                 </section>
                                 <section>
+                                <h3>App Design</h3>
                                 <ul className='pricing-container'>
-                                    <li>Website development...........</li>
-                                    <li>$250.00</li>
+                                    <li>Mobile, Tablet, and Desktop...........</li>
+                                    <li>$1,000.00</li>
+                                
+                                </ul>
+                                </section>
+                                <section>
+                                <h3>App Development</h3>
+                                <ul className='pricing-container'>
+                                    <li>Mobile, Tablet, and Desktop...........</li>
+                                    <li>$1,000.00</li>
                                 
                                 </ul>
                                 </section>
 
-                                <section style={analyticsIntegration}>
-                                <ul className='pricing-container'>
-                                <li style={HighlightAnalytics}>Start marketing online............</li>
-                                    <li style={HighlightAnalytics}>$1,000.00</li>
-                                </ul>
-                                </section>
-
                                 <section style={paymentIntegration}>
+                                    <h3 style={HighlightPayment}>Payment Integration</h3>
                                 <ul className='pricing-container'>
-                                <li style={HighlightPayment}>Accept online payments...........</li>
+                                <li style={HighlightPayment}>Accept payment or subscription...........</li>
                                     <li style={HighlightPayment}>$1,500.00</li>
                                 </ul>
                                 </section>
+
+                                <section style={analyticsIntegration}>
+                                    <h3 style={HighlightAnalytics}>Analytics Integration</h3>
+                                <ul className='pricing-container'>
+                                <li style={HighlightAnalytics}>Improve user experience with analytics............</li>
+                                    <li style={HighlightAnalytics}>$1,500.00</li>
+                                </ul>
+                                </section>
+
+                            
 
 
                                 <section style={dataBaseIntegration}>
