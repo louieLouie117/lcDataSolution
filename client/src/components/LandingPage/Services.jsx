@@ -134,22 +134,26 @@ const premiumServiceHandler = () => {
                     <ul className='ServicesCard'>
 
                         <li>
-                            <h2>Why Every Business Needs a Website.</h2>
+                            <h2>The Importance of Databases in App Development.</h2>
                             <div className='ServiceCardInfo'>
-                            <img src="/img/HeroImage.png" alt="" />
+                            <img src="/img/HeroSoftwareImg.png" alt="" />
                             <p>
-                            In today’s digital landscape, having a website is no longer a luxury—it’s a necessity. From enterprise to small local business having a website is essential. Here are compelling reasons why your business should have a website:
+                            In the dynamic world of app development, databases play a pivotal role in creating efficient and robust applications. Let’s explore why databases are crucial and how they relate to app development:
                             </p>
                             <ul>
-        <li><strong>Credibility and Trust:</strong> A professional website builds trust with potential customers.</li>
-        <li><strong>Brand Showcase:</strong> Define your brand identity and stand out from competitors.</li>
-        <li><strong>Lead Generation:</strong> Your website converts visitors into leads.</li>
-        <li><strong>SEO Benefits:</strong> Optimize for search engines to increase visibility.</li>
-        <li><strong>Efficient Customer Service:</strong> Provide essential information online.</li>
+        <li><strong>Effective Data Management:</strong> A database is a structured collection of data that enables efficient retrieval, manipulation, and management.
+        It organizes large amounts of data, ensuring smooth app performance.</li>
+        <li><strong>Enhanced Performance:</strong> Fast data access and manipulation lead to responsive apps.
+        Choosing the right database optimizes performance, making your app stand out.</li>
+        <li><strong>Scalability:</strong> As your user base grows, databases accommodate increased data volume.
+        Scalability ensures your app can handle more users without compromising speed.</li>
+        <li><strong>Security Measures:</strong> Robust security protects sensitive user data.
+        Properly designed databases prevent unauthorized access.</li>
+       
     </ul>
                             </div>
                             <footer>
-                            <a href="https://calendly.com/d/cpbm-dt4-gh7/15min">
+                            <a href="https://calendly.com/cardona-luis/30min">
                             <button className='MainBTN'>Schedule Consultation</button>
                             </a>
                             </footer>
@@ -158,16 +162,41 @@ const premiumServiceHandler = () => {
                         </li>
                     </ul>
                 </section>
-
                 <section>
                     <div className="PeaceOfMind">
-                        <h2>Peace of mind</h2>
                         <main>
                         <img src="/img/PeaceOfMindImg.png" alt="" />
 
                             <div className="PeaceOfMindInfo">
-                            <h3>Have a expert at your fingertips.</h3>
-                            
+                            <h3>Have an expert at your fingertips. If you have any question please contact me.</h3>
+                            <div className='Contact-Container'>
+
+
+                      <main>
+                      <a href="tel:931-401-7238">
+                        <img src="/img/Icons/IconPhone.png" alt="" />
+                      <button>Call</button>
+
+                      </a>
+
+                      <a href="sms:931-401-7238">
+                        <img src="/img/Icons/IconText.png" alt="" />
+                      <button>Text</button>
+                      </a>
+
+                      <a href="mailTo:LCwebsitesolutions@outlook.com?subject=Website&body= Hello Luis Cardona">
+                        <img src="/img/Icons/IconEmail.png" alt="" />
+                        <button>Email</button>
+                      </a>
+                      <a href="https://www.instagram.com/garagesally.founder/">
+                        <img src="/img/Icons/IconInsta.png" alt="" />
+                      <button>DM</button>
+                      </a>
+
+                      </main>
+               
+
+                    </div>
 
                             </div>
 

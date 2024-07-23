@@ -53,10 +53,9 @@
 }
 
 .ServicesCard>li>h2{
-    font: 1.2em sans-serif;
+    font: 1.5em sans-serif;
     color: #0080BF;
     width: 350px;
-    text-align: center;
     padding: 5px;
     /* cursor: pointer; */
 
@@ -85,6 +84,7 @@
     padding-bottom: 40px;
     height: 80vh;
     justify-items: center;
+    align-content: center;
     background: linear-gradient(140deg, #2727aa, #f39e4e);
 }
 

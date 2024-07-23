@@ -85,7 +85,7 @@ const ContactMeHandler = e =>{
                   <img id="PortfolioImg" src="/img/PortfolioPhoto350.png" alt="" />
                   </div>
                   <footer>
-                  <h2>I help bringing businesses online, seamlessly.</h2>
+                  <h2>I help businesses with database and app development solutions.</h2>
 
                   
 
