@@ -5,9 +5,9 @@ function Services(props) {
 
     <ServicesStyles></ServicesStyles>
     // service tile
-    const [ServiceTile, setServiceTile] = useState('Website Basic');
+    const [ServiceTile, setServiceTile] = useState('MVP Basic');
     // service description
-    const [ServiceDescription, setServiceDescription] = useState('Website Plus Service: Enhance your app with additional features and scalability. Rigorous testing ensures quality over time.');
+    const [ServiceDescription, setServiceDescription] = useState('MVP Basic Service: Get a streamlined app that meets your immediate needs. Expect regular updates and cost-effectiveness.');
     // service purchase link
     const [purchaseLink, setPurchaseLink] = useState('https://buy.stripe.com/00gaF49Ibdbj0zmeUW');
     // monthly service price
@@ -36,9 +36,9 @@ function Services(props) {
 // basicServiceHandler
 const basicServiceHandler = () => {
     //service tile
-    setServiceTile('Basic Website');
+    setServiceTile('MVP Basic');
     // service description
-    setServiceDescription('Website Basic Service: Get a streamlined website that meets your immediate needs. Expect regular updates and cost-effectiveness.');
+    setServiceDescription('MVP Basic Service: Get a streamlined app that meets your immediate needs. Expect regular updates and cost-effectiveness.');
     setBasicServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
     setPlusServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
@@ -59,7 +59,7 @@ const basicServiceHandler = () => {
 // plusServiceHandler
 const plusServiceHandler = () => {
     //service tile
-    setServiceTile('Website Plus');
+    setServiceTile('MVP Plus');
     // service description
     setServiceDescription('MVP Plus Service: Enhance your app with additional features and scalability. Rigorous testing ensures quality over time.');
     setPlusServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
@@ -89,9 +89,9 @@ const plusServiceHandler = () => {
 // premiumServiceHandler
 const premiumServiceHandler = () => {
     //service tile
-    setServiceTile('Website Premium');
+    setServiceTile('MVP Premium');
     // service description
-    setServiceDescription('MVP Premium Service: Transform your app into a robust application. High availability and reliability are our focus.');
+    setServiceDescription('MVP Premium Service: Transform your app into a robust application. High availability and reliability is the focus.');
     setPremiumServiceBTNStyles( {backgroundColor: '#136db0', color: 'white'});
     setBasicServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPlusServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
