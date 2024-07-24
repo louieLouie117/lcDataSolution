@@ -108,7 +108,7 @@ function WorkExperience(props) {
              
                      
 
-                    <li>
+                    {/* <li>
 
                         
                         <img src="img/Portfolio/sugarRay414.png" alt=''/>
@@ -120,7 +120,7 @@ function WorkExperience(props) {
                                     </footer>
                                                 
                           
-                        </li>
+                        </li> */}
 
                         
                     <li>
