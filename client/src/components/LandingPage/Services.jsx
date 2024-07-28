@@ -132,91 +132,28 @@ const premiumServiceHandler = () => {
             </header> */}
 
             <main>
-                <section>
-                    <ul className='ServicesCard'>
-
-                        <li>
-                            <h2>The Importance of Databases in App Development.</h2>
-                            <div className='ServiceCardInfo'>
-                            <img src="/img/HeroSoftwareImg.png" alt="" />
-                            <p>
-                            In the dynamic world of app development, databases play a pivotal role in creating efficient and robust applications. Let’s explore why databases are crucial and how they relate to app development:
-                            </p>
-                            <ul>
-        <li><strong>Effective Data Management:</strong> A database is a structured collection of data that enables efficient retrieval, manipulation, and management.
-        It organizes large amounts of data, ensuring smooth app performance.</li>
-        <li><strong>Enhanced Performance:</strong> Fast data access and manipulation lead to responsive apps.
-        Choosing the right database optimizes performance, making your app stand out.</li>
-        <li><strong>Scalability:</strong> As your user base grows, databases accommodate increased data volume.
-        Scalability ensures your app can handle more users without compromising speed.</li>
-        <li><strong>Security Measures:</strong> Robust security protects sensitive user data.
-        Properly designed databases prevent unauthorized access.</li>
-       
-    </ul>
-                            </div>
-                            <footer>
-                            <a href="https://calendly.com/cardona-luis/30min">
-                            <button className='MainBTN'>Schedule Consultation</button>
-                            </a>
-                            </footer>
-
-
-                        </li>
-                    </ul>
-                </section>
-                <section>
-                    <div className="PeaceOfMind">
-                        <main>
-                        <img src="/img/PeaceOfMindImg.png" alt="" />
-
-                            <div className="PeaceOfMindInfo">
-                            <h3>Have an expert at your fingertips. If you have any question please contact me.</h3>
-                            <div className='Contact-Container'>
-
-
-                      <main>
-                      <a href="tel:925-809-2738">
-                        <img src="/img/Icons/IconPhone.png" alt="" />
-                      <button>Call</button>
-
-                      </a>
-
-                      <a href="sms:925-809-2738">
-                        <img src="/img/Icons/IconText.png" alt="" />
-                      <button>Text</button>
-                      </a>
-
-                      <a href="mailTo:LCwebsitesolutions@outlook.com?subject=Website&body= Hello Luis Cardona">
-                        <img src="/img/Icons/IconEmail.png" alt="" />
-                        <button>Email</button>
-                      </a>
-                      <a href="https://www.instagram.com/garagesally.founder/">
-                        <img src="/img/Icons/IconInsta.png" alt="" />
-                      <button>DM</button>
-                      </a>
-
-                      </main>
-               
-
-                    </div>
-
-                            </div>
-
-                        </main>
-                    </div>
-                </section>
+              
+                
 
                 <section className='Cost-Container'>
-                    <header>
-                    <img src="/img/CostImg.png" alt="" />
+                    {/* <header>
                     <h3>Pricing and Services</h3>
-                    {/* <p>You can build a price base on your buisness needs or get full services.</p>
+
+                    </header> */}
+                    {/* <header>
+                    <p>You can build a price base on your buisness needs or get full services.</p>
                     <nav>
                     <button>Build a price</button>
                     <button>Full Services</button>
-                    </nav> */}
+                    </nav>
 
-                    </header>
+                    </header> */}
+                    <aside>
+
+                    <h1>Get an app with a custom database to fit your business needed.</h1>
+                    {/* <img src="/img/CostImg.png" alt="" /> */}
+
+                    </aside>
 
                     <main>
                     <ul className='ServicesCard ServiceBackground'>
@@ -292,7 +229,7 @@ const premiumServiceHandler = () => {
                                 <section>
                                 <h3>Monthly Services</h3>
                                 
-                                <div className="MonthlyServicesInfo">
+            <div className="MonthlyServicesInfo">
                             
                                
                                 </div>
@@ -331,6 +268,44 @@ const premiumServiceHandler = () => {
                     </ul>
                     </main>
                 </section>
+
+                <section>
+                    <ul className='ServicesCard'>
+
+                        <li>
+                            <h2>The Importance of Databases in App Development.</h2>
+                            <div className='ServiceCardInfo'>
+                            <img src="/img/HeroSoftwareImg.png" alt="" />
+                            <p>
+                            In the dynamic world of app development, databases play a pivotal role in creating efficient and robust applications. Let’s explore why databases are crucial and how they relate to app development:
+                            </p>
+                    <ul>
+                        <li><strong>Effective Data Management:</strong> A database is a structured collection of data that enables efficient retrieval, manipulation, and management.
+                        It organizes large amounts of data, ensuring smooth app performance.</li>
+                        <li><strong>Enhanced Performance:</strong> Fast data access and manipulation lead to responsive apps.
+                        Choosing the right database optimizes performance, making your app stand out.</li>
+                        <li><strong>Scalability:</strong> As your user base grows, databases accommodate increased data volume.
+                        Scalability ensures your app can handle more users without compromising speed.</li>
+                        <li><strong>Security Measures:</strong> Robust security protects sensitive user data.
+                        Properly designed databases prevent unauthorized access.</li>
+                    
+                    </ul>
+            </div>
+            <h3>Do you have questions with database and app development? Schedule a free consultation.</h3>
+                    <footer>
+                              
+                            <a href="https://calendly.com/cardona-luis/30min">
+                            <button className='MainBTN'>Schedule Consultation</button>
+                            </a>
+                            
+                    </footer>
+                        
+
+                        </li>
+                    </ul>
+                </section>
+
+               
             </main>
 
 
