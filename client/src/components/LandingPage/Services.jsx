@@ -151,7 +151,6 @@ const premiumServiceHandler = () => {
                     <aside>
 
                     <h1>Get an app with a custom database to fit your business needed.</h1>
-                    {/* <img src="/img/CostImg.png" alt="" /> */}
 
                     </aside>
 
