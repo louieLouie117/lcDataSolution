@@ -47,6 +47,8 @@ html{
   }
   .LandingPage-Container{
     display: grid;
+    background: linear-gradient(140deg, #2727aa, #f39e4e);
+
   
     /* justify-items: center; */
   }
@@ -175,7 +177,6 @@ html{
   .projectsPage-container{
     height: auto;
     position: relative;
-    border-radius: 10px;
     display: grid;
     background-color: white;
     /* background: linear-gradient(to bottom, #00aecd, #136DC0 45%); */
@@ -1102,8 +1103,8 @@ html{
   
   .name-container img{
     border: solid 2px whitesmoke;
-    border-radius: 80px;
-    height: 95px;
+    border-radius: 160px;
+    height: 160px;
     align-self: center;
   }
   
@@ -1266,12 +1267,11 @@ html{
 
   .devTools-container{
     display: grid;
-    position: relative;background-color: whitesmoke;
-    background: linear-gradient(180deg, #2727aa, #f39e4e);
+    /* background: linear-gradient(180deg, #2727aa, #f39e4e); */
     justify-content: center;
     row-gap: 20px;
     width: auto;
-    height: 100vh
+    /* height: 100vh */
 
   }
   
@@ -1455,7 +1455,7 @@ html{
 
   .footer-container{
     display: grid;
-    background-color: #f39e4e;  
+    /* background-color: #f39e4e;   */
     justify-content: center;
     padding: 20px;
     height: 50px;
@@ -1617,6 +1617,18 @@ html{
 
     .myHeader-container>header>footer>h2{
       width: auto;
+      padding-top: 40px;
+      font: 2.9em sans-serif;
+    }
+
+    
+    .myHeader-container{
+      height: 75vh;
+    }
+
+    .Cost-Container{
+      grid-template-columns: 1fr 1fr;
+      column-gap: 150px;
     }
     #frameworks{
       width: 450px;
@@ -1644,9 +1656,7 @@ html{
         text-decoration: none;
         text-align: center;
       }
-      .devTools-container{
-        height: 50vh;
-      }
+ 
       
     
     }
