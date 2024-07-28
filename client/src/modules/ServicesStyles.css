@@ -34,7 +34,7 @@
 .ServicesCard>li>main{
     display: grid;
     padding-bottom: 20px;
-    height: 400px;
+    height: 450px;
     align-content: flex-start;
 }
 
