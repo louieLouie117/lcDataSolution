@@ -6,7 +6,6 @@ html{
     display: grid;
     margin: 0 auto;
     background: whitesmoke;
-    background: linear-gradient(140deg, #2727aa, #f39e4e);
   
   }
 
@@ -48,6 +47,8 @@ html{
   }
   .LandingPage-Container{
     display: grid;
+    background: linear-gradient(140deg, #2727aa, #f39e4e);
+
   
     /* justify-items: center; */
   }

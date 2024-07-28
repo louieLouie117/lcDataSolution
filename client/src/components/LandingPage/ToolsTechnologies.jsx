@@ -10,7 +10,7 @@ function ToolsTechnologies(props) {
                         <img src="/img/PeaceOfMindImg.png" alt="" />
 
                             <div className="PeaceOfMindInfo">
-                            <h3>What to learn Full Stack Development? Stop the endless tutorials learn, create, and document.</h3>
+                            <h3>Interested in mastering Full Stack Development? Move beyond endless tutorials—learn, create, and document your journey.</h3>
                             <div className='Contact-Container'>
 
 
