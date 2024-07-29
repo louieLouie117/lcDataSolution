@@ -17,6 +17,10 @@
 }
 
 
+.ServicesCard>li::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
 
 .ServicesCard>li{
     display: grid;
@@ -202,6 +206,7 @@ justify-items: flex-end;
 .MonthlyOptions{
     display: flex;
     width: 100%;
+    column-gap: 3px;
 }
 
 
@@ -257,7 +262,17 @@ justify-items: flex-end;
         display: grid;
         /* grid-template-columns: 1fr 1fr 1fr; */
     }
+    .ServicesCard>li{
+        padding: 30px;
+    }
+
+    .ServiceCardInfo{
+        width: 60em;
+    }
  
+    .PeaceOfMind{
+        width: 25em;
+    }
 
  
 
