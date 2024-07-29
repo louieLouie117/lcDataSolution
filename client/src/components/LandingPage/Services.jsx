@@ -13,7 +13,7 @@ function Services(props) {
     // monthly service price
     const [monthlyServicePrice, setMonthlyServicePrice] = useState('120.00');
     // purchase button text
-    const [purchaseBTNText, setPurchaseBTNText] = useState('Get Plus');
+    const [purchaseBTNText, setPurchaseBTNText] = useState('Get Basic');
     // payment integration
     const [paymentIntegration, setPaymentIntegration] = useState({display: 'none'});
 
@@ -289,15 +289,18 @@ const premiumServiceHandler = () => {
                         Properly designed databases prevent unauthorized access.</li>
                     
                     </ul>
-            </div>
-            <h3>Do you have questions with database and app development? Schedule a free consultation.</h3>
+                    <h4>Have questions about database and app development? Schedule a free consultation today</h4>
                     <footer>
                               
-                            <a href="https://calendly.com/cardona-luis/30min">
-                            <button className='MainBTN'>Schedule Consultation</button>
-                            </a>
-                            
-                    </footer>
+                              <a href="https://calendly.com/cardona-luis/30min">
+                              <button className='MainBTN'>Schedule Consultation</button>
+                              </a>
+                              
+                      </footer>
+                     
+            </div>
+          
+                   
                         
 
                         </li>
