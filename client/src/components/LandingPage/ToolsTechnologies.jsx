@@ -4,54 +4,10 @@ function ToolsTechnologies(props) {
   return (
     <div className="devTools-container">
 
-<section>
-                    <div className="PeaceOfMind">
-                        <main>
-                        <img src="/img/PeaceOfMindImg.png" alt="" />
 
-                            <div className="PeaceOfMindInfo">
-                            <h3>Interested in mastering Full Stack Development? Move beyond endless tutorials—learn, create, and document your journey.</h3>
-                            <div className='Contact-Container'>
-
-
-                     
-                      <footer>
-                              
-                              <a href="https://calendly.com/cardona-luis/30min">
-                              <button className='MainBTN'>Schedule Mentorship</button>
-                              </a>
-                              
-                      </footer>
-                          <p>Free mentorship.</p>
-                          {/* <main>
-                      <a href="tel:925-809-2738">
-                        <img src="/img/Icons/IconPhone.png" alt="" />
-                      <button>Call</button>
-
-                      </a>
-
-                      <a href="sms:925-809-2738">
-                        <img src="/img/Icons/IconText.png" alt="" />
-                      <button>Text</button>
-                      </a>
-
-                      <a href="mailTo:LCwebsitesolutions@outlook.com?subject=Website&body= Hello Luis Cardona">
-                        <img src="/img/Icons/IconEmail.png" alt="" />
-                        <button>Email</button>
-                      </a>
-                     
-
-                      </main> */}
-
-                    </div>
-
-                            </div>
-
-                        </main>
-                    </div>
-                </section>
-        <h2>Tools and Technologies</h2>
+        <h2>Professional Developer Tools and Technologies</h2>
             
+            <section></section>
             <section>
             <div className="blueLine"></div>
 
@@ -77,7 +33,37 @@ function ToolsTechnologies(props) {
                     </li>
 
                 </ul>
+               
               </section>
+              <section>
+                    <div className="PeaceOfMind">
+                        <main>
+                        <img src="/img/PeaceOfMindImg.png" alt="" />
+
+                            <div className="PeaceOfMindInfo">
+                            <h3>Interested in mastering Full Stack Development? Move beyond endless tutorials—learn, create, and document your journey.</h3>
+                            <div className='Contact-Container'>
+
+
+                     
+                      <footer>
+                              
+                              <a href="https://calendly.com/cardona-luis/30min">
+                              <button className='MainBTN'>Schedule Mentorship</button>
+                              </a>
+                              
+                      </footer>
+                          <p>Free mentorship.</p>
+
+                    </div>
+
+                            </div>
+
+                        </main>
+                    </div>
+                </section>
+
+            
 
               
           
