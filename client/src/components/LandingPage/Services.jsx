@@ -155,7 +155,7 @@ const premiumServiceHandler = () => {
                     </aside>
 
                     <main>
-                    <ul className='ServicesCard ServiceBackground'>
+                    <ul className='ServiceBackground'>
                     <div className="MonthlyOptions">
                                     <button style={basicServiceBTNStyles} onClick={() => basicServiceHandler()}>Basic</button>
 
