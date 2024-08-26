@@ -7,22 +7,33 @@
 .Services-Container>header>h1{
     font: 2em sans-serif;
 }
-.ServicesCard {
+.ServicesCard{
     display: grid;
     justify-content: center;
     row-gap: 20px;
     align-items: center;
-    /* background-color: white; */
+    background-color: white;
     border-radius: 10px;
     margin: 5px;
 
 
 }
 
+.ServiceBackground{
+    display: grid;
+    row-gap: 10px;
+}
+.ServiceBackground>li{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 .ServicesCard>h1{
     font: 2em sans-serif;
-    color: white;
+    color: black;
     margin: 10px;
+    padding: 20px;
 }
 
 
