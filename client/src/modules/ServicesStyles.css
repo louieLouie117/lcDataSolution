@@ -1,7 +1,7 @@
 .Services-Container{
     /* background: linear-gradient(140deg, #2727aa, #f39e4e); */
     padding-top: 40px;
-    padding-bottom: 180px;
+    padding-bottom: 100px;
 }
 
 .Services-Container>header>h1{
@@ -12,8 +12,17 @@
     justify-content: center;
     row-gap: 20px;
     align-items: center;
+    /* background-color: white; */
+    border-radius: 10px;
+    margin: 5px;
 
 
+}
+
+.ServicesCard>h1{
+    font: 2em sans-serif;
+    color: white;
+    margin: 10px;
 }
 
 
@@ -58,10 +67,20 @@
 .ServicesCard>li>h2{
     font: 1.5em sans-serif;
     color: #0080BF;
-    width: 350px;
     padding: 5px;
     /* cursor: pointer; */
 
+}
+
+.NestedArticles{
+    display: grid;
+    row-gap: 30px;
+    padding: 20px;
+}
+
+.NestedArticles>li>h3{
+    font: 1.1em sans-serif;
+    color: #0080BF;
 }
 
 
@@ -264,6 +283,7 @@ justify-items: flex-end;
     }
     .ServicesCard>li{
         padding: 30px;
+        max-width: 60em;
     }
 
     .ServiceCardInfo{
