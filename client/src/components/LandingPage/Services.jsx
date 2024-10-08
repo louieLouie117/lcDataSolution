@@ -69,9 +69,9 @@ function Services(props) {
 
     <ServicesStyles></ServicesStyles>
     // service tile
-    const [ServiceTile, setServiceTile] = useState('Transform your website to a webapp.');
+    const [ServiceTile, setServiceTile] = useState('Launch a New App or Convert Your Website into a Web App.');
     // service description
-    const [ServiceDescription, setServiceDescription] = useState('Get a streamlined app that meets your immediate needs. Expect regular updates and cost-effectiveness...........');
+    const [ServiceDescription, setServiceDescription] = useState('Receive a streamlined app tailored to your immediate needs. Jumpstart your project by focusing on the #1 essential feature your app needs. Fast delivery and cost-effective pricing.');
     // service purchase link
     const [purchaseLink, setPurchaseLink] = useState('https://buy.stripe.com/fZe6oO3jNdbj0zm149');
     // monthly service price
@@ -97,9 +97,9 @@ function Services(props) {
 // basicServiceHandler
 const basicServiceHandler = () => {
     //service tile
-    setServiceTile('Transform your website to a webapp.');
+    setServiceTile('Launch a New App or Convert Your Website into a Web App.');
     // service description
-    setServiceDescription('Get a streamlined app that meets your immediate needs. Expect regular updates and cost-effectiveness...........');
+    setServiceDescription('Receive a streamlined app tailored to your immediate needs. Jumpstart your project by focusing on the #1 essential feature your app needs. Fast delivery and cost-effective pricing.');
     setBasicServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
     setPlusServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
@@ -122,7 +122,7 @@ const basicServiceHandler = () => {
 // plusServiceHandler
 const plusServiceHandler = () => {
     //service tile
-    setServiceTile('App with additional features and scalability.');
+    setServiceTile('App with Integrated Payment or Subscription features.');
     // service description
     setServiceDescription('Enhance your app with additional features and scalability. Rigorous testing ensures quality over time..........');
     setPlusServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
@@ -158,19 +158,19 @@ const premiumServiceHandler = () => {
     //service tile
     setServiceTile('App with high availability and reliability.');
     // service description
-    setServiceDescription('Transform your app into a robust application. High availability and reliability is the focus...........');
+    setServiceDescription('A robust application...........');
     setPremiumServiceBTNStyles( {backgroundColor: '#136db0', color: 'white'});
     setBasicServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPlusServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     
-    setPurchaseLink('https://buy.stripe.com/bIYbJ86vZ2wFeqc6oz');
+    setPurchaseLink('https://buy.stripe.com/aEUbJ85rVfjrbe0fZ5');
     // set monthly service price
-    setMonthlyServicePrice('240.00');
+    setMonthlyServicePrice('560.00');
     // set purchase button text
     setPurchaseBTNText('Get Premium');
 
     // total amount
-    setTotalAmount('$6,740.00');
+    setTotalAmount('$8,560.00');
     
 
 
@@ -216,9 +216,11 @@ const premiumServiceHandler = () => {
                             <header>
                       
                             <h2>{ServiceTile}</h2>
+
                        
                             </header>
                             <main className='AppPricing-Container'>
+
                             <section>
                                 {renderBasicService()}
 
@@ -237,14 +239,16 @@ const premiumServiceHandler = () => {
                               
 
                                 <section>
-                                <h3>Monthly Services</h3>
                                 
                                 <div className="MonthlyServicesInfo">
                             
                                
                                 </div>
+                                <h3>Monthly Services</h3>
+
                                 <ul className='pricing-container'>
-                                    <li>{ServiceDescription}..........</li>
+
+                                <li>Server Maintenance and Updates.</li>
                                     <li  >${monthlyServicePrice}/m</li>
                                 
                                 </ul>
@@ -258,6 +262,7 @@ const premiumServiceHandler = () => {
                                     
                                     </ul>
                                     </section>
+                            <p>{ServiceDescription}</p>
                               
                             </main>
                             <footer>
@@ -282,7 +287,7 @@ const premiumServiceHandler = () => {
                 </section>
 
                 <section>
-      <HeroBanner></HeroBanner>
+                <HeroBanner></HeroBanner>
 
                 </section>
 
@@ -290,7 +295,7 @@ const premiumServiceHandler = () => {
                     <ul className='ServicesCard'>
 
                         <li>
-                            <h2>Get a custom app solutions within 3 months.</h2>
+                            <h2>Get a custom app solutions in three months.</h2>
                             <div className='ServiceCardInfo'>
                             <img src="/img/HeroSoftwareImg.png" alt="" />
 
@@ -317,11 +322,20 @@ const premiumServiceHandler = () => {
                 <section>
                     <ul className='ServicesCard'>
 
-                        <h1>Tips for Businesses Looking for an App:</h1>
+                        <h1>Five Tips for Businesses Looking for an App</h1>
                         <li>
-                            <h2># 1 Tip: Avoid No-Code Developers.</h2>
+                            <h2># 1 Tip: Ensure Your Database is Correct.</h2>
+                            <p>The most critical tip for any app development project is to ensure your database is correctly designed and implemented.</p>
+
+                            <p>The database is the backbone of your application, storing all the essential data that your app relies on.</p>
+
+                            <p>Avoid no-code databases. These platforms often lack the flexibility and limit your ability to customize your app to meet specific needs.</p>
+
+                        </li>
+                        <li>
+                            <h2># 2 Tip: Avoid No-Code Developers.</h2>
                       
-                            <p>The most crucial tip for businesses looking to develop an app is to avoid no-code developers.</p>
+                            <p>Businesses looking to develop an app is vital to avoid no-code developers.</p>
 
                             <p>Think of app development like building a house. The foundation is crucial; if it’s weak, the entire structure is at risk. No-code developers use tools that are like trying to build a house on a shaky foundation. </p>
 
@@ -331,31 +345,31 @@ const premiumServiceHandler = () => {
                           
                         </li>
                         <li>
-                            <h2># 2 Tip: Know the Limitations of No-Code Platforms.</h2>
+                            <h2># 3 Tip: Know the Limitations of No-Code Platforms.</h2>
                          
 
                             <p>Think of no-code platforms as a one-size-fits-all solution. They might work for simple tasks, but when it comes to building something unique and complex, they fall short. If a developer relies on these platforms, they aren’t true developers. Here are some reasons why:</p>
                             <ul className="NestedArticles">
                                 <li>
-                                    <h3>Customization Constraints:</h3>
-                                    <p>No-code platforms often provide limited customization options. If your app requires unique features or complex functionalities, these platforms may not be able to accommodate your needs.</p>
+                                    <h3>Customization Constraints</h3>
+                                    
                                 
                                 </li>
                                 <li>
-                                    <h3>Scalability Issues:</h3>
-                                    <p>As your business grows, your app will need to handle more users and data. No-code platforms will struggle with scalability, leading to performance issues.</p>
-                                
-                                </li>
-
-                                <li>
-                                    <h3>Security Concerns:</h3>
-                                    <p>No-code platforms might not offer the same level of security as custom-developed apps. This can be a critical issue, especially if your app handles sensitive data.</p>
+                                    <h3>Scalability Issues</h3>
+                                    
                                 
                                 </li>
 
                                 <li>
-                                    <h3>Vendor Lock-In:</h3>
-                                    <p>Relying on a no-code platform can lead to vendor lock-in, where you’re dependent on the platform for updates, maintenance, and support. This can limit your flexibility and control over the app.</p>
+                                    <h3>Security Concerns</h3>
+                                   
+                                
+                                </li>
+
+                                <li>
+                                    <h3>Vendor Lock-In</h3>
+                                  
                                 
                                 </li>
                             </ul>
@@ -363,32 +377,7 @@ const premiumServiceHandler = () => {
                                                   
                         </li>
 
-                        <li>
-                            <h2># 3 Tip: Understand why Professional Developers Are a Better Choice.</h2>
-                         
-                            <p>Whether you choose me or another professional developer, make sure you avoid no-code developers. Professional developers are like master chefs who can create a dish exactly to your taste. They offer several advantages:</p>
-                            <ul className="NestedArticles">
-                                <li>
-                                    <h3>Tailored Solutions:</h3>
-                                    <p>Professional developers can create custom solutions tailored to your specific needs, ensuring that your app stands out and meets all your requirements.</p>
-                                
-                                </li>
-                                <li>
-                                    <h3>Better Performance and Scalability:</h3>
-                                    <p>Custom-developed apps are generally more robust and scalable, capable of handling increased loads and complex functionalities.</p>
-                                </li>
-                                <li>
-                                    <h3>Enhanced Security:</h3>
-                                    <p>Professional developers can implement advanced security measures to protect your app and its data.</p>
-                                </li>
-                                <li>
-                                    <h3>Long-Term Support:</h3>
-                                    <p>With a dedicated development team, you have ongoing support for updates, maintenance, and troubleshooting.</p>
-                                </li>
-                            </ul>
-
-                          
-                        </li>
+                       
 
                         <li>
                             <h2># 4 Tip: Be Cautious Of Popular No-Code Tools.</h2>
@@ -398,29 +387,63 @@ const premiumServiceHandler = () => {
                             <ul className="NestedArticles">
                                 <li>
                                 <h3>Salesforce:</h3>
-                                    <p>Used for CRM and business automation, Salesforce’s no-code app development can be limiting for highly customized apps.</p>
+                                <p>Used for CRM and business automation, Salesforce’s no-code app development can be limiting for highly customized apps.</p>
+                                    
                                 </li>
 
                                 <li>
                                     <h3>Bubble:</h3>
                                     <p>Used for prototyping and simple apps, but it can struggle with performance and scalability for more complex applications.</p>
+                                   
                                 </li>
 
                                 <li>
                                     <h3>Adalo:</h3>
-                                    <p>Used for basic apps, but lacks the flexibility and power needed for more sophisticated projects.</p>
+                                    <p>
+                                    Used for basic apps, but lacks the flexibility and power needed for more sophisticated projects.</p>
+                                   
                                 </li>
 
                                 <li>
                                     <h3>Glide:</h3>
                                     <p>Use for creating simple mobile apps from spreadsheets, but not suitable for complex, feature-rich applications.</p>
+                                    
                                 </li>
 
                                 <li>
                                     <h3>Airtable:</h3>
                                     <p>Use for database management and simple apps, but not designed for high-performance or highly customized apps.</p>
+                                    
                                 </li>
 
+                             
+
+                            </ul>
+
+                          
+                        </li>
+                        <li>
+                            <h2># 5 Tip: Understand why Professional Developers Are a Better Choice.</h2>
+                         
+                            <p>Whether you choose me or another professional developer, make sure you avoid no-code developers. Professional developers are like master chefs who can create a dish exactly to your taste. They offer several advantages:</p>
+                            <ul className="NestedArticles">
+                                <li>
+                                    <h3>Tailored Solutions</h3>
+                                   
+                                
+                                </li>
+                                <li>
+                                    <h3>Better Performance and Scalability</h3>
+                                   
+                                </li>
+                                <li>
+                                    <h3>Enhanced Security</h3>
+                                   
+                                </li>
+                                <li>
+                                    <h3>Long-Term Support</h3>
+                                    
+                                </li>
                             </ul>
 
                           

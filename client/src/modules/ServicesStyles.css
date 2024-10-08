@@ -32,7 +32,7 @@
 
 .ServicesCard>li{
     display: grid;
-    row-gap: 30px;
+    row-gap: 20px;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -272,6 +272,7 @@
     }
     .ServicesCard>li{
         padding: 30px;
+        max-width: 60em;
     }
 
     .ServiceCardInfo{
