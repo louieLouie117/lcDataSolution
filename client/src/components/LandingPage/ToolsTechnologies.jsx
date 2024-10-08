@@ -5,7 +5,7 @@ function ToolsTechnologies(props) {
     <div className="devTools-container">
 
 
-        <h2>Professional Developer Tools and Technologies</h2>
+        <h2>Developer Tools and Technologies</h2>
             
             <section></section>
             <section>

@@ -1,39 +1,27 @@
 .Services-Container{
     /* background: linear-gradient(140deg, #2727aa, #f39e4e); */
-    padding-top: 40px;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
 }
 
 .Services-Container>header>h1{
     font: 2em sans-serif;
 }
-.ServicesCard{
+.ServicesCard {
     display: grid;
     justify-content: center;
     row-gap: 20px;
     align-items: center;
-    background-color: white;
-    border-radius: 10px;
-    margin: 5px;
 
 
-}
-
-.ServiceBackground{
-    display: grid;
-    row-gap: 10px;
-}
-.ServiceBackground>li{
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
 }
 
 .ServicesCard>h1{
     font: 2em sans-serif;
-    color: black;
-    margin: 10px;
-    padding: 20px;
+    color: white;
+    text-align: left;
+    padding: 28px;
+    text-shadow: 2px 2px 14px #00000046;
+    text-align: center;
 }
 
 
@@ -44,7 +32,7 @@
 
 .ServicesCard>li{
     display: grid;
-    row-gap: 10px;
+    row-gap: 30px;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -58,7 +46,6 @@
 .ServicesCard>li>main{
     display: grid;
     padding-bottom: 20px;
-    height: 450px;
     align-content: flex-start;
 }
 
@@ -73,25 +60,16 @@
 
 .ServicesCard>li>header>h2{
     color: #0080BF;
+    font: 1.9em sans-serif;
 }
 
 .ServicesCard>li>h2{
     font: 1.5em sans-serif;
     color: #0080BF;
+    width: 350px;
     padding: 5px;
     /* cursor: pointer; */
 
-}
-
-.NestedArticles{
-    display: grid;
-    row-gap: 30px;
-    padding: 20px;
-}
-
-.NestedArticles>li>h3{
-    font: 1.1em sans-serif;
-    color: #0080BF;
 }
 
 
@@ -146,7 +124,6 @@
     margin: 0 auto;
     border-radius: 20px;
     padding: 10px;  
-    align-content: center;
     
 }
 
@@ -162,9 +139,11 @@
 .Cost-Container>aside h1{
     font: 2em sans-serif;
     color: white;
-    text-align: left;
-    padding: 30px;
-}
+    text-align: left;    
+    padding: 28px;
+    text-shadow: 2px 2px 14px #00000046;
+    text-align: center;
+}   
 
 
 .Cost-Container>header{
@@ -197,9 +176,7 @@
     align-items: flex-end;
 }
 
-.pricing-container>li:last-of-type{
-justify-items: flex-end;
-}
+
 
 .ServicesCard>li>h3{
     font: 1em sans-serif;
@@ -276,11 +253,11 @@ justify-items: flex-end;
 
     .Cost-Container{
         padding: 40px;
-        height: 100vh;
+        height: 80vh;
     }
 
     .Cost-Container>aside h1{
-        font: 4em sans-serif;
+        font: 3em sans-serif;
         padding: 40px;
         align-self: center;
         margin-top: 150px;
@@ -295,7 +272,6 @@ justify-items: flex-end;
     }
     .ServicesCard>li{
         padding: 30px;
-        max-width: 60em;
     }
 
     .ServiceCardInfo{

@@ -12,30 +12,24 @@ function WorkExperience(props) {
   return (
     <div >
       <div className="projectsPage-container" id='PageTop'>
-      <nav className='FilterWebsite-Container'>
+      <header>
+            <img src="img/Icons/ModernLogo.png" alt="" />
+            <h1>LC Data Solutions</h1>
+          </header>
 
-                 
-                </nav>
+
         <main>
-                {/* <picture class="headerImage-container">
-                    <source media="(min-width: 1300px)" srcset="/img/desktopImg.png" />
-                    <source media="(min-width: 725px)" srcset="/img/tabletImg.png" />
-                    <img src="/img/mobileImgLarge.png" alt="" />
-                </picture> */}
-               
-        
+  
+           
         <div className="cardItems">
-
-          <h1>Portfolio</h1>
-          
                   <ul>   
                   <li>
                 
 
                     <img src="img/Portfolio/journalPocket414.png" alt=''/>
                           <footer className='CardFooter-Container'>
-                          <a href="https://journalpocketapp.com/">
-                                  <button className='MainBTN'>View</button>
+                          <a href="https://journalpocket.com/">
+                                  <button>View</button>
                                   </a>
 
                           </footer>
@@ -48,7 +42,7 @@ function WorkExperience(props) {
 
                              <footer className='CardFooter-Container'>                                  
                              <a href="https://garagesallyapp.com/">
-                               <button className='MainBTN'>View</button>
+                               <button>View</button>
                                </a>
 
 
@@ -62,7 +56,7 @@ function WorkExperience(props) {
 
                              <footer className='CardFooter-Container'>                                  
                              <a href="https://www.concordironworks.com/">
-                               <button className='MainBTN'>View</button>
+                               <button>View</button>
                                </a>
 
 
@@ -81,7 +75,7 @@ function WorkExperience(props) {
 
                           <footer className='CardFooter-Container'>                                                                          
                           <a href="https://www.ibupholstery.com/">
-                            <button className='MainBTN'>View</button>
+                            <button>View</button>
                         </a>
                           </footer>
                   </li>   
@@ -98,29 +92,11 @@ function WorkExperience(props) {
                                   </a>
 
                                   <a href="https://icy-flower-0ac939810.1.azurestaticapps.net">
-                                    <button className='MainBTN'>View</button>
+                                    <button>View</button>
                                   </a>
 
                               </footer>
                       </li>
-                
-
-             
-                     
-
-                    {/* <li>
-
-                        
-                        <img src="img/Portfolio/sugarRay414.png" alt=''/>
-                                     
-                                    <footer className='CardFooter-Container'>                                 
-                                  <a href="https://www.thesugarayssweettea.com/">
-                                    <button className='MainBTN'>View</button> 
-                                    </a>
-                                    </footer>
-                                                
-                          
-                        </li> */}
 
                         
                     <li>
@@ -130,7 +106,7 @@ function WorkExperience(props) {
                                   <footer className='CardFooter-Container'>                                 
 
                                   <a href="https://www.thehookup671islandbbq.com/">
-                                  <button className='MainBTN'>View</button> 
+                                  <button>View</button> 
                                   </a>
 
                               </footer>
@@ -145,7 +121,7 @@ function WorkExperience(props) {
                      
                                     <footer className='CardFooter-Container'>                                 
                                     <a href="https://www.ismaelbanuelosrealtor.com/">
-                                          <button className='MainBTN'>View</button>
+                                          <button>View</button>
                                         </a>
                                
                                 </footer>
@@ -154,19 +130,19 @@ function WorkExperience(props) {
                         </li>
                         <li>
 
-                        
-<img src="img/Portfolio/stMicheal414.png" alt=''/>
+                                                    
+                            <img src="img/Portfolio/stMicheal414.png" alt=''/>
 
-            <footer className='CardFooter-Container'>                                 
+                                        <footer className='CardFooter-Container'>                                 
 
-            <a href="https://www.stmichaeloakgrove.com/">
-                  <button className='MainBTN'>View</button>
-                </a>
+                                        <a href="https://www.stmichaeloakgrove.com/">
+                                              <button>View</button>
+                                            </a>
 
-        </footer>
-                        
-  
-</li>
+                                    </footer>
+                                                    
+                              
+                            </li>
 
                         <li>
 
@@ -176,7 +152,7 @@ function WorkExperience(props) {
                                 <footer className='CardFooter-Container'>                                 
 
                                 <a href="https://www.deltasportsbar.com/">
-                                      <button className='MainBTN'>View</button>
+                                      <button>View</button>
                                     </a>
 
                             </footer>
@@ -193,7 +169,7 @@ function WorkExperience(props) {
 
                             <footer className='CardFooter-Container'>                                                                          
                                 <a href="https://www.jrprolandscaping.com/">
-                                  <button className='MainBTN'>View</button>
+                                  <button>View</button>
                               </a>
                             </footer>
                         </li>
