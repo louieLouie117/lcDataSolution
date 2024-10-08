@@ -1,44 +1,105 @@
 import ServicesStyles from "../../modules/ServicesStyles.css"
+
 import React, { useState } from 'react';
+import HeroBanner from '../../components/LandingPage/HeroBanner'
+
 
 function Services(props) {
 
+    const renderBasicService = () => {
+        return (
+            <ul className='pricing-container' style={BasicServicesStyles}>
+                 <li>App Design.......</li>
+                 <li>$1,000.00</li>
+
+                 <li>App Development.......</li>
+                 <li>$1,000.00</li>
+
+                <li>Database Strategy.......</li>
+                <li>$3,000.00</li>
+            </ul>
+        );
+    };
+
+    // render puls service
+    const renderPlusService = () => {
+        return (
+            <ul className='pricing-container' style={PlusServers}>
+                <li>App Design.......</li>
+                <li>$1,000.00</li>
+
+                <li>App Development.......</li>
+                <li>$1,000.00</li>
+
+           
+                <li>Database Strategy.......</li>
+                <li>$3,000.00</li>
+
+                <li>Payment Integration.......</li>
+                <li>$1,500.00</li>
+            </ul>
+        );
+    };
+
+    const renderPremiumService = () => {
+        return (
+            <ul className='pricing-container' style={PremiumServicesStyles}>
+                <li>App Design.......</li>
+                <li>$1,000.00</li>
+
+                <li>App Development.......</li>
+                <li>$1,000.00</li>
+
+           
+                <li>Database Strategy.......</li>
+                <li>$3,000.00</li>
+
+                <li>Payment Integration.......</li>
+                <li>$1,500.00</li>
+
+                <li>Analytics.......</li>
+                <li>$1,500.00</li>
+            </ul>
+        );
+    };
+    
+    
+    const [BasicServicesStyles, setBasicServicesStyles] = useState({display: 'grid'});
+
+
     <ServicesStyles></ServicesStyles>
     // service tile
-    const [ServiceTile, setServiceTile] = useState('MVP Basic');
+    const [ServiceTile, setServiceTile] = useState('Transform your website to a webapp.');
     // service description
-    const [ServiceDescription, setServiceDescription] = useState('MVP Basic Service: Get a streamlined app that meets your immediate needs. Expect regular updates and cost-effectiveness.');
+    const [ServiceDescription, setServiceDescription] = useState('Get a streamlined app that meets your immediate needs. Expect regular updates and cost-effectiveness...........');
     // service purchase link
-    const [purchaseLink, setPurchaseLink] = useState('https://buy.stripe.com/00gaF49Ibdbj0zmeUW');
+    const [purchaseLink, setPurchaseLink] = useState('https://buy.stripe.com/fZe6oO3jNdbj0zm149');
     // monthly service price
     const [monthlyServicePrice, setMonthlyServicePrice] = useState('120.00');
     // purchase button text
     const [purchaseBTNText, setPurchaseBTNText] = useState('Get Basic');
-    // payment integration
-    const [paymentIntegration, setPaymentIntegration] = useState({display: 'none'});
+   
 
-    // database integration
-    const [dataBaseIntegration, setDataBaseIntegration] = useState({display: 'none'});
+    // branding logo integration
+    const [PremiumServicesStyles, setPremiumServicesStyles] = useState({display: 'none'});
     // total amount
     const [TotalAmount, setTotalAmount] = useState('$5,120.00');
     // analytics integration
-    const [analyticsIntegration, setAnalyticsIntegration] = useState({display: 'none'});
+    const [PlusServers, setPlusServers] = useState({display: 'none'});
     // highlight analytics
-    const [HighlightAnalytics, setHighlightAnalytics] = useState({color: '#0092db'});
 
     // updated button to link to stripe
     const [basicServiceBTNStyles, setBasicServiceBTNStyles] = useState({backgroundColor: '#136db0', color: 'white'});
     const [plusServiceBTNStyles, setPlusServiceBTNStyles] = useState({backgroundColor: 'white', color: '#0092db'});
     const [premiumServiceBTNStyles, setPremiumServiceBTNStyles] = useState({backgroundColor: 'white', color: '#0092db'});
-    // highlight payment
-    const [HighlightPayment, setHighlightPayment] = useState({color: '#0092db'});
+    // branding styles
 
 // basicServiceHandler
 const basicServiceHandler = () => {
     //service tile
-    setServiceTile('MVP Basic');
+    setServiceTile('Transform your website to a webapp.');
     // service description
-    setServiceDescription('MVP Basic Service: Get a streamlined app that meets your immediate needs. Expect regular updates and cost-effectiveness.');
+    setServiceDescription('Get a streamlined app that meets your immediate needs. Expect regular updates and cost-effectiveness...........');
     setBasicServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
     setPlusServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
@@ -48,74 +109,71 @@ const basicServiceHandler = () => {
     // set purchase button text
     setPurchaseBTNText('Get Basic');
     // payment integration
-    setPaymentIntegration({display: 'none'});
-    // total amount
+
+    setPlusServers({display: 'none'});
+    setPremiumServicesStyles({display: 'none'});
+
+    setBasicServicesStyles({display: 'grid'});
+    
     setTotalAmount('$5,120.00');
-    // analytics integration
-    setAnalyticsIntegration({display: 'none'});
-    // database integration
-    setDataBaseIntegration({display: 'none'});
+
+
 }
 // plusServiceHandler
 const plusServiceHandler = () => {
     //service tile
-    setServiceTile('MVP Plus');
+    setServiceTile('App with additional features and scalability.');
     // service description
-    setServiceDescription('MVP Plus Service: Enhance your app with additional features and scalability. Rigorous testing ensures quality over time.');
+    setServiceDescription('Enhance your app with additional features and scalability. Rigorous testing ensures quality over time..........');
     setPlusServiceBTNStyles({backgroundColor: '#136db0', color: 'white'});
     setBasicServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPremiumServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});  
-    setPurchaseLink('https://buy.stripe.com/4gw00qaMfgnvbe028e');
+    setPurchaseLink('https://buy.stripe.com/aEUbJ85rVfjrbe0fZ5');
     // set monthly service price
     setMonthlyServicePrice('240.00');
     // set purchase button text
     setPurchaseBTNText('Get Plus');
-    // payment integration
     // total amount
     setTotalAmount('$6,740.00');
+
+    // display basic service none renderBasicService
+    setBasicServicesStyles({display: 'none'});
+
+    // PremiumServicesStyles
+    setPremiumServicesStyles({display: 'none'});
     // analytics integration
-    setHighlightAnalytics({color: '#0092db'});
-    // highlight payment
-    setHighlightPayment({color: '#0092db'});
-    // accept online payments
-    setPaymentIntegration({display: 'none'});
-    setPaymentIntegration({display: 'grid'});
-    setAnalyticsIntegration({display: 'none'});
+    setPlusServers({display: 'grid'});
 
-
-    // database integration
-    setDataBaseIntegration({display: 'none'});
+    // BasicServicesStyles 
+    setBasicServicesStyles({display: 'none'});
 }
+  
 // premiumServiceHandler
 const premiumServiceHandler = () => {
+    setPremiumServicesStyles({display: 'grid'});
+
+
+    setBasicServicesStyles({display: 'none'});
+    setPlusServers({display: 'none'});
     //service tile
-    setServiceTile('MVP Premium');
+    setServiceTile('App with high availability and reliability.');
     // service description
-    setServiceDescription('MVP Premium Service: Transform your app into a robust application. High availability and reliability is the focus.');
+    setServiceDescription('Transform your app into a robust application. High availability and reliability is the focus...........');
     setPremiumServiceBTNStyles( {backgroundColor: '#136db0', color: 'white'});
     setBasicServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     setPlusServiceBTNStyles({backgroundColor: 'white', color: '#136db0'});
     
-    setPurchaseLink('https://buy.stripe.com/aEUbJ85rVfjrbe0fZ5');
+    setPurchaseLink('https://buy.stripe.com/bIYbJ86vZ2wFeqc6oz');
     // set monthly service price
-    setMonthlyServicePrice('560.00');
+    setMonthlyServicePrice('240.00');
     // set purchase button text
     setPurchaseBTNText('Get Premium');
-    // payment integration
-    setPaymentIntegration({display: 'grid'});
-    // total amount
-    setTotalAmount('$8,560.00');
-    // analytics integration
-    setAnalyticsIntegration({display: 'grid'});
-    // highlight payment
-    setHighlightPayment({color: 'black'});
-    // highlight analytics
-    setHighlightAnalytics({color: '#0092db'});
-    // database integration
-    setDataBaseIntegration({display: 'none'});
-    // payment integration
 
-    setAnalyticsIntegration({display: 'grid'});
+    // total amount
+    setTotalAmount('$6,740.00');
+    
+
+
 
 
 }
@@ -132,30 +190,19 @@ const premiumServiceHandler = () => {
             </header> */}
 
             <main>
-              
-                
+               
+    
 
                 <section className='Cost-Container'>
-                    {/* <header>
-                    <h3>Pricing and Services</h3>
+                <aside>
 
-                    </header> */}
-                    {/* <header>
-                    <p>You can build a price base on your buisness needs or get full services.</p>
-                    <nav>
-                    <button>Build a price</button>
-                    <button>Full Services</button>
-                    </nav>
+        <h1>Custom Solutions for Every Business Need.</h1>
 
-                    </header> */}
-                    <aside>
+        </aside>
 
-                    <h1>Get an app with a custom database to fit your business needed.</h1>
-
-                    </aside>
 
                     <main>
-                    <ul className='ServiceBackground'>
+                    <ul className='ServicesCard ServiceBackground'>
                     <div className="MonthlyOptions">
                                     <button style={basicServiceBTNStyles} onClick={() => basicServiceHandler()}>Basic</button>
 
@@ -173,62 +220,26 @@ const premiumServiceHandler = () => {
                             </header>
                             <main className='AppPricing-Container'>
                             <section>
-                                <h3>Database</h3>
-                                <ul className='pricing-container'>
-                                    <li>Strategy and development...........</li>
-                                    <li>$3,000.00</li>
-                                </ul>
+                                {renderBasicService()}
+
                                 </section>
                                 <section>
-                                <h3>App Design</h3>
-                                <ul className='pricing-container'>
-                                    <li>Mobile, Tablet, and Desktop...........</li>
-                                    <li>$1,000.00</li>
-                                
-                                </ul>
+                                {renderPlusService()}
                                 </section>
+
                                 <section>
-                                <h3>App Development</h3>
-                                <ul className='pricing-container'>
-                                    <li>Mobile, Tablet, and Desktop...........</li>
-                                    <li>$1,000.00</li>
-                                
-                                </ul>
+                                {renderPremiumService()}
                                 </section>
 
-                                <section style={paymentIntegration}>
-                                    <h3 style={HighlightPayment}>Payment Integration</h3>
-                                <ul className='pricing-container'>
-                                <li style={HighlightPayment}>Accept payment or subscription...........</li>
-                                    <li style={HighlightPayment}>$1,500.00</li>
-                                </ul>
-                                </section>
-
-                                <section style={analyticsIntegration}>
-                                    <h3 style={HighlightAnalytics}>Analytics Integration</h3>
-                                <ul className='pricing-container'>
-                                <li style={HighlightAnalytics}>Improve user experience with analytics............</li>
-                                    <li style={HighlightAnalytics}>$1,500.00</li>
-                                </ul>
-                                </section>
 
                             
-
-
-                                <section style={dataBaseIntegration}>
-                                <ul className='pricing-container'>
-                                <li style={HighlightPayment}>Database integration...........</li>
-                                    <li style={HighlightPayment}>$5,000.00</li>
-                                </ul>
-                                </section>
-
 
                               
 
                                 <section>
                                 <h3>Monthly Services</h3>
                                 
-            <div className="MonthlyServicesInfo">
+                                <div className="MonthlyServicesInfo">
                             
                                
                                 </div>
@@ -238,6 +249,15 @@ const premiumServiceHandler = () => {
                                 
                                 </ul>
                                 </section>
+
+                                <section>
+                                    
+                                    <ul className='pricing-container'>
+                                        <li>Total........................................................</li>
+                                        <li>{TotalAmount}</li>
+                                    
+                                    </ul>
+                                    </section>
                               
                             </main>
                             <footer>
@@ -246,14 +266,7 @@ const premiumServiceHandler = () => {
                             <button className='MainBTN' >{purchaseBTNText}</button>
 
                             </a>
-                            <section>
-                                    
-                                    <ul className='pricing-container'>
-                                        <li>Total........................................................</li>
-                                        <li>{TotalAmount}</li>
-                                    
-                                    </ul>
-                                    </section>
+                            
                             </footer>
                         </li>
 
@@ -266,6 +279,39 @@ const premiumServiceHandler = () => {
 
                     </ul>
                     </main>
+                </section>
+
+                <section>
+      <HeroBanner></HeroBanner>
+
+                </section>
+
+                <section>
+                    <ul className='ServicesCard'>
+
+                        <li>
+                            <h2>Get a custom app solutions within 3 months.</h2>
+                            <div className='ServiceCardInfo'>
+                            <img src="/img/HeroSoftwareImg.png" alt="" />
+
+                            <p>
+                            I specialize in creating custom applications that meet your unique needs and goals. Whether you’re looking to create a new app or convert a website to an app, I can help. 
+                            </p>
+
+                            <p>I have experience working with a variety of industries. Schedule an appointment today to discuss your app needs, and let’s create something amazing together.</p>
+
+                            
+      
+                            </div>
+                            <footer>
+                            <a href="https://calendly.com/cardona-luis/30min">
+                            <button className='MainBTN'>Schedule Appointment</button>
+                            </a>
+                            </footer>
+
+
+                        </li>
+                    </ul>
                 </section>
 
                 <section>
@@ -380,26 +426,12 @@ const premiumServiceHandler = () => {
                           
                         </li>
 
-                        <li>
-                        <div className='ServiceCardInfo'>
-                        <h2>Let’s Chat!</h2>
-                            <img src="/img/HeroSoftwareImg.png" alt="" />
-                            </div> 
-                            <p>If you have any questions or are ready to take the next step in developing a custom app for your business, don’t hesitate to schedule a consultation.</p>
-                            <p>During the consultation, we can discuss your unique needs, explore potential solutions, and determine the best path forward for your business. Whether you’re looking to streamline operations, enhance customer engagement, or create new revenue streams, a custom app can help you achieve your goals.</p>
-                            
                        
-                              
-                           <a href="https://calendly.com/cardona-luis/30min">
-                           <button className='MainBTN'>Schedule Consultation</button>
-                           </a>
-                           
-                   </li>
                       
                     </ul>
                 </section>
 
-               
+
             </main>
 
 
